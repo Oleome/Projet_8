@@ -1,10 +1,20 @@
-import { NavLink } from "react-router-dom";
+import Wave from 'react-wavify';
 import "./header.scss";
 
 function Header() {
     return (
         <header>
-            <h2>Coucou</h2>
+
+            <Wave className="wave" fill='#0080ff'
+                paused={false}
+                options={{
+                height: 20,
+                amplitude: 40,
+                speed: 0.15,
+                points: 3
+                }}
+            />
+
         </header>
     )
 }
