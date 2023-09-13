@@ -1,6 +1,7 @@
 import '../styles/home.scss';
 import sable from '../assets/sable.jpg';
 import ballon from '../assets/ballon.png';
+import bateau from '../assets/bateau.png';
     
 
 function Home() {
@@ -8,7 +9,10 @@ function Home() {
 
         <main>
             <div className='img--sand'><img src={sable} alt="" /></div>
-            <a href='#page-2' className='btn--slide'><img src={ballon} alt="" /></a>
+            <a href='#page-2' className='btn--slide'><img src={ballon} alt="ballon de plage" /></a>
+            <div className='boat--container'>
+                <img className='boat--pic' src={bateau} alt="bateau" />
+            </div>
             <section>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos iure illo accusantium quibusdam error iusto. Alias ad commodi suscipit, iure ipsa totam rem, porro at labore beatae ullam voluptatibus corrupti?
