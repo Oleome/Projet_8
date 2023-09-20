@@ -2,7 +2,7 @@ import '../styles/home.scss';
 import sable from '../assets/sable.jpg';
 import ballon from '../assets/ballon.png';
 import bateau from '../assets/bateau.png';
-import nina from '../assets/ninacarducci.png';
+import kasa from '../assets/Kasa.png';
     
 
 function Home() {
@@ -18,7 +18,16 @@ function Home() {
             </div>
             <section className='page-2' id='page-2'>
                 <div className='card'>
-                    <img src={nina} alt="" />
+                    <img src={kasa} alt="" />
+                </div>
+                <div className='card'>
+                    <img src={kasa} alt="" />
+                </div>
+                <div className='card'>
+                    <img src={kasa} alt="" />
+                </div>
+                <div className='card'>
+                    <img src={kasa} alt="" />
                 </div>
             </section>
             <div className='img--sand'><img  src={sable} alt="" /></div>
