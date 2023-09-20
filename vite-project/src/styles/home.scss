@@ -18,18 +18,18 @@
 
 
 .text-container {
-    overflow: hidden; /* Masquer le texte en dehors de la zone */
+    overflow: hidden; 
   }
   
   .animated-text {
-    animation: slideIn 0.5s forwards; /* Utiliser l'animation 'slideIn' pendant 0,5 seconde */
+    animation: slideIn 0.5s forwards; 
   }
   
   @keyframes slideIn {
     from {
-      transform: translateX(-100%); /* Déplacer le texte complètement hors de l'écran à gauche */
+      transform: translateX(-100%); 
     }
     to {
-      transform: translateX(0); /* Déplacer le texte vers la position initiale */
+      transform: translateX(0); 
     }
   }

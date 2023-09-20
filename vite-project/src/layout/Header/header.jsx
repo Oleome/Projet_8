@@ -4,7 +4,7 @@ import "./header.scss";
 function Header() {
     return (
         <header>
-            <h1 className="logo">Hello</h1>
+            <NavLink className="logo" to="/"></NavLink>
             <nav className="nav">
                 <NavLink className="nav--link" to="a_propos">A propos</NavLink>
                 <NavLink className="nav--link" to="projets">Mes projets</NavLink>
