@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 function Home() {
     return (
 
-        <main>
+        <main className='main--home'>
             <div className="typewriter">
                 <p>Bonjour</p>
                 <p>Je suis Pierre Pillot</p>
-                <p>Dévellopeur web</p>
+                <p>Développeur Web</p>
             </div>
             <div>
                 <img src={me} alt="" />
