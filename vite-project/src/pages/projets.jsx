@@ -1,6 +1,7 @@
 import kasa from '../assets/Kasa.png';
 import nina from '../assets/nina.png';
 import grimoire from '../assets/monvieuxgrimoire.png';
+import shader from '../assets/shader.png';
 import '../styles/projet.scss';
 import react from '../assets/react.png';
 import node from '../assets/nodejs.png';
@@ -25,6 +26,12 @@ function Projets () {
                 <img className='card--img' src={nina} alt="" />
                 <div className='pastille'>
                     <img className='pastille--tech' src={light} alt="" />
+                </div>
+            </div>
+            <div className="card">
+                <img className='card--img' src={shader} alt="" />
+                <div className='pastille'>
+                    <img className='pastille--tech' src={react} alt="" />
                 </div>
             </div>
         </main>
