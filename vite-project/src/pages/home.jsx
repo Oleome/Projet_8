@@ -1,28 +1,15 @@
-import '../styles/home.scss';
-import sable from '../assets/sable.jpg';
-import ballon from '../assets/ballon.png';
-import bateau from '../assets/bateau.png';
-import nina from '../assets/ninacarducci.png';
-    
+import '../styles/home.scss'; 
 
 function Home() {
     return (
 
         <main>
-            <div className="text-container">
-                <div className="animated-text">
-                    Mon texte qui apparaît depuis la gauche.
-                </div>
+            <div className="typewriter">
+                <p>Bonjour</p>
+                <p>Je suis Pierre Pillot</p>
+                <p>Dévellopeur web</p>
             </div>
-            {/* <div className='test'>
-                <h2>Mes projets</h2>
-                <a href='#page-2' className='btn--slide'><img src={ballon} alt="ballon de plage" /></a>
-            </div>
-            {/* <section className='page-2' id='page-2'>
-                <div className='card'>
-                    <img src={nina} alt="" />
-                </div>
-            </section> */} 
+            <h2>LOGO</h2>
         </main>
     )
 }
