@@ -1,4 +1,5 @@
 .card {
+    position: relative;
     display: flex;
     align-items: center;
     width: 32%;
@@ -7,13 +8,33 @@
     background-color: black;
     border-radius: 2px;
 
-    img {
+    .card--img {
         width: 100%;
         height: auto;
         aspect-ratio: 16/9;
         object-fit: cover;
     }
+
+    .pastille {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background-color: black;
+        border-radius: 50px;
+        padding: 5px;
+
+        &--tech {
+            width: 100%;
+            height: auto;
+            object-fit: fill;
+        }
+        
+    }
 }
+
+
 
 .main--projet {
     padding: 25px;
