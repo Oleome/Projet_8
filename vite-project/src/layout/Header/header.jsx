@@ -1,18 +1,15 @@
+import { NavLink } from "react-router-dom";
 import "./header.scss";
-import mer from "../../assets/mer.jpg"
 
 function Header() {
     return (
         <header>
-            <img className="sea" src={mer} alt="plage au bord de mer" />
-            <nav>
-                <h1 className="logo">Hello</h1>
-                <ul className="nav">
-                    <li className="nav--container">À propos</li>
-                    <li className="nav--container">Mes projets</li>
-                    <li className="nav--container">Mes services</li>
-                    <li className="nav--container">Contact</li>
-                </ul>
+            <h1 className="logo">Hello</h1>
+            <nav className="nav">
+                <NavLink className="nav--link" to="a_propos">A propos</NavLink>
+                <NavLink className="nav--link" to="projets">Mes projets</NavLink>
+                <NavLink className="nav--link" to="services">Mes services</NavLink>
+                <NavLink className="nav--link" to="contact">Contact</NavLink>
             </nav>
         </header>
     )

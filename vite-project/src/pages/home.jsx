@@ -9,19 +9,20 @@ function Home() {
     return (
 
         <main>
-            <div >
+            <div className="text-container">
+                <div className="animated-text">
+                    Mon texte qui apparaît depuis la gauche.
+                </div>
+            </div>
+            {/* <div className='test'>
                 <h2>Mes projets</h2>
                 <a href='#page-2' className='btn--slide'><img src={ballon} alt="ballon de plage" /></a>
             </div>
-            <div className='boat--container'>
-                <img className='boat--pic' src={bateau} alt="bateau" />
-            </div>
-            <section className='page-2' id='page-2'>
+            {/* <section className='page-2' id='page-2'>
                 <div className='card'>
                     <img src={nina} alt="" />
                 </div>
-            </section>
-            <div className='img--sand'><img  src={sable} alt="" /></div>
+            </section> */} 
         </main>
     )
 }
