@@ -27,24 +27,6 @@ function Projets () {
                     <img className='pastille--tech' src={light} alt="" />
                 </div>
             </div>
-            <div className="card">
-                <img className='card--img' src={grimoire} alt="" />
-                <div className='pastille'>
-                    <img className='pastille--tech' src={react} alt="" />
-                </div>
-            </div>  
-            <div className="card">
-                <img className='card--img' src={grimoire} alt="" />
-                <div className='pastille'>
-                    <img className='pastille--tech' src={react} alt="" />
-                </div>
-            </div>  
-            <div className="card">
-                <img className='card--img' src={grimoire} alt="" />
-                <div className='pastille'>
-                    <img className='pastille--tech' src={react} alt="" />
-                </div>
-            </div>
         </main>
     )
 }
