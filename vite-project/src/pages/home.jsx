@@ -1,4 +1,5 @@
 import '../styles/home.scss'; 
+import me from '../assets/me.png';
 
 function Home() {
     return (
@@ -9,7 +10,9 @@ function Home() {
                 <p>Je suis Pierre Pillot</p>
                 <p>Dévellopeur web</p>
             </div>
-            <h2>LOGO</h2>
+            <div>
+                <img src={me} alt="" />
+            </div>
         </main>
     )
 }
