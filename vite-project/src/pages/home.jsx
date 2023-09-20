@@ -1,5 +1,6 @@
 import '../styles/home.scss'; 
 import me from '../assets/me.png';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <div>
                 <img src={me} alt="" />
             </div>
+            <NavLink className='projets' to="projets">Mes projets</NavLink>
         </main>
     )
 }
