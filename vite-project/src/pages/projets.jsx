@@ -42,102 +42,106 @@ function Projets () {
 
     return (
         <main className='main--projet'>
-            <div className="card">
-                <img className='card--img' src={kasa} alt="image du site kasa" />
-                <div className='pastille'>
-                    <img className='pastille--tech' src={react} alt="logo de react" />
+            <h2 className='projets'>Mes projets</h2>
+            <div className="container">
+                <div className="card">
+                    <img className='card--img' src={kasa} alt="image du site kasa" />
+                    <div className='pastille'>
+                        <img className='pastille--tech' src={react} alt="logo de react" />
+                    </div>
+                    <div className="hover-image" onClick={openModal}>
+                        <h3>Création du site Kasa avec React</h3>
+                    </div>
+                    <Modal
+                        isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        onRequestClose={closeModal}
+                        style={customStyles}
+                        contentLabel="Informations Modal"
+                    >
+                        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
+                        <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
+                        Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
+                        Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
+                        </p>
+                        <button onClick={closeModal}>close</button>
+                    </Modal>
                 </div>
-                <div className="hover-image" onClick={openModal}>
-                    <h3>Création du site Kasa avec React</h3>
+                <div className="card">
+                    <img className='card--img' src={grimoire} alt="" />
+                    <div className='pastille'>
+                        <img className='pastille--tech' src={node} alt="" />
+                    </div>
+                    <div className="hover-image" onClick={openModal}>
+                        <h3>Backend du site Mon vieux grimoire</h3>
+                    </div>
+                    <Modal
+                        isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        onRequestClose={closeModal}
+                        style={customStyles}
+                        contentLabel="Informations Modal"
+                    >
+                        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
+                        <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
+                        Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
+                        Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
+                        </p>
+                        <button onClick={closeModal}>close</button>
+                    </Modal>
                 </div>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Informations Modal"
-                >
-                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
-                    Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
-                    Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
-                    </p>
-                    <button onClick={closeModal}>close</button>
-                </Modal>
+                <div className="card">
+                    <img className='card--img' src={nina} alt="" />
+                    <div className='pastille'>
+                        <img className='pastille--tech' src={light} alt="" />
+                    </div>
+                    <div className="hover-image" onClick={openModal}>
+                        <h3>Débug du portfolio de Nina Carducci</h3>
+                    </div>
+                    <Modal
+                        isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        onRequestClose={closeModal}
+                        style={customStyles}
+                        contentLabel="Informations Modal"
+                    >
+                        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
+                        <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
+                        Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
+                        Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
+                        </p>
+                        <button onClick={closeModal}>close</button>
+                    </Modal>
+                </div>
+                <div className="card">
+                    <img className='card--img' src={shader} alt="" />
+                    <div className='pastille'>
+                        <img className='pastille--tech' src={react} alt="" />
+                    </div>
+                    <div className="hover-image" onClick={openModal}>
+                        <h3>Création application React pour un streamer twitch créant des shaders OBS</h3>
+                    </div>
+                    <Modal
+                        isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        onRequestClose={closeModal}
+                        style={customStyles}
+                        contentLabel="Informations Modal"
+                    >
+                        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
+                        <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
+                        Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
+                        Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
+                        </p>
+                        <button onClick={closeModal}>close</button>
+                    </Modal>
+                </div>
             </div>
-            <div className="card">
-                <img className='card--img' src={grimoire} alt="" />
-                <div className='pastille'>
-                    <img className='pastille--tech' src={node} alt="" />
-                </div>
-                <div className="hover-image" onClick={openModal}>
-                    <h3>Backend du site Mon vieux grimoire</h3>
-                </div>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Informations Modal"
-                >
-                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
-                    Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
-                    Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
-                    </p>
-                    <button onClick={closeModal}>close</button>
-                </Modal>
-            </div>
-            <div className="card">
-                <img className='card--img' src={nina} alt="" />
-                <div className='pastille'>
-                    <img className='pastille--tech' src={light} alt="" />
-                </div>
-                <div className="hover-image" onClick={openModal}>
-                    <h3>Débug du portfolio de Nina Carducci</h3>
-                </div>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Informations Modal"
-                >
-                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
-                    Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
-                    Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
-                    </p>
-                    <button onClick={closeModal}>close</button>
-                </Modal>
-            </div>
-            <div className="card">
-                <img className='card--img' src={shader} alt="" />
-                <div className='pastille'>
-                    <img className='pastille--tech' src={react} alt="" />
-                </div>
-                <div className="hover-image" onClick={openModal}>
-                    <h3>Création application React pour un streamer twitch créant des shaders OBS</h3>
-                </div>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Informations Modal"
-                >
-                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
-                    Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.
-                    Iusto, aliquam delectus! Facilis quis rerum deleniti, dolorum veniam labore maiores magnam praesentium nemo? Earum doloremque dignissimos laborum, ut magni cumque enim sapiente quibusdam officiis facilis sed qui. Ducimus, corrupti.
-                    </p>
-                    <button onClick={closeModal}>close</button>
-                </Modal>
-            </div>
+            
         </main>
     )
 }

@@ -1,46 +1,64 @@
 .main--projet {
-    padding: 75px;
-    row-gap: 75px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: block;
+    margin: 100px;
+    background-color: rgb(224, 209, 209);
+    border-radius: 10px;
 
-    .card {
-        position: relative;
+    .projets {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        padding: 50px 0 40px;
+    }
+
+    .container {
         display: flex;
-        align-items: center;
-        width: 40%;
-        height: auto;
-        padding: 3px;
-        background-color: rgb(110, 6, 6);
-        border-radius: 2px;
-    
-        .card--img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16/9;
-            object-fit: cover;
-        }
-    
-        .pastille {
+        padding: 0 75px 40px;
+        gap: 75px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .card {
+            position: relative;
             display: flex;
             align-items: center;
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            background-color: rgb(0, 0, 0);
-            border-radius: 50px;
-            padding: 5px;
-    
-            &--tech {
+            width: 45%;
+            height: auto;
+            padding: 3px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        
+            .card--img {
                 width: 100%;
                 height: auto;
-                object-fit: fill;
-            }  
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        
+            .pastille {
+                display: flex;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                background-color: rgb(0, 0, 0);
+                border-radius: 50px;
+                padding: 5px;
+        
+                &--tech {
+                    width: 100%;
+                    height: auto;
+                    object-fit: fill;
+                }  
+            }
         }
     }
+
+   
 }
 
 .hover-image {
@@ -59,6 +77,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    border-radius: 5px;
 }
   
 .card:hover .hover-image {
