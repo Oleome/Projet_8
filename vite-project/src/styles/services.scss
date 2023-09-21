@@ -1,0 +1,40 @@
+.services--container {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 35%;
+        height: 60vh;
+        background-color: grey;
+        border-radius: 15px;
+
+        .icone {
+            position: absolute;
+            top: -75px;
+            left: 30%;
+            width: 200px;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .skills {
+            position: absolute;
+            bottom: 60%;
+        }
+
+        .languages {
+            position: absolute;
+            bottom: 30%;
+        }
+    }
+}
+
