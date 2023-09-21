@@ -10,7 +10,7 @@ function Services () {
                 </div>
                 <div className='skills'>
                     <h2>Développement web</h2>
-                    <p></p>
+                    <p>Développement d&apos;applications React, sites vitrines, optimisation et débug de site, création backend</p>
                 </div>
                 <div className='languages'>
                     <h2>Languages utilisés</h2>

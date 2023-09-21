@@ -7,6 +7,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         position: relative;
         width: 35%;
         height: 60vh;
@@ -27,13 +28,15 @@
         }
 
         .skills {
-            position: absolute;
-            bottom: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 50px;
         }
 
         .languages {
-            position: absolute;
-            bottom: 30%;
+            
         }
     }
 }
