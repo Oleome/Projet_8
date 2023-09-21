@@ -6,6 +6,7 @@ import '../styles/projet.scss';
 import react from '../assets/react.png';
 import node from '../assets/nodejs.png';
 import light from '../assets/light.png';
+import ordi from '../assets/ordi.png';
 import Modal from 'react-modal';
 import { useState } from 'react';
 
@@ -42,7 +43,10 @@ function Projets () {
 
     return (
         <main className='main--projet'>
-            <h2 className='projets'>Mes projets</h2>
+            <div className="title--container">
+                <h2 className='projets'>Mes projets</h2>
+                <img src={ordi} alt="une icône d'ordinateur" />
+            </div>
             <div className="container">
                 <div className="card">
                     <img className='card--img' src={kasa} alt="image du site kasa" />
