@@ -1,4 +1,5 @@
 import icone from '../assets/icone.png';
+import iconeslanguages from '../assets/icone-3.png';
 import '../styles/services.scss';
 
 function Services () {
@@ -14,7 +15,7 @@ function Services () {
                 </div>
                 <div className='languages'>
                     <h2>Languages utilisés</h2>
-                    <p></p>
+                    <img src={iconeslanguages} alt="icônes de language informatique"  width={500}/>
                 </div>
             </div>
         </main>
