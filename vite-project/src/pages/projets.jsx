@@ -7,6 +7,9 @@ import react from '../assets/react.png';
 import node from '../assets/nodejs.png';
 import light from '../assets/light.png';
 import ordi from '../assets/ordi.png';
+import kasaaccueil from '../assets/kasa_accueil.png';
+import kasaapropos from '../assets/kasa_a_propos.png';
+import kasadetails from '../assets/kasa_details.png';
 import Modal from 'react-modal';
 import { useState } from 'react';
 
@@ -63,7 +66,16 @@ function Projets () {
                         style={customStyles}
                         contentLabel="Informations Modal"
                     >
-                        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Informations</h2>
+                        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Kasa</h2>
+                        <div className="kasa--accueil">
+                            <img src={kasaaccueil} alt="page d'accueil de Kasa" />
+                        </div>
+                        <div className="kasa--a_propos">
+                            <img src={kasaapropos} alt="page à propos de Kasa" />
+                        </div>
+                        <div className="kasa--details">
+                            <img src={kasadetails} alt="page détails de Kasa" />
+                        </div>
                         <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, dolore minus, a perspiciatis excepturi officiis, ducimus itaque autem minima nesciunt non sed aliquid nostrum molestias nam iusto provident! Voluptatum?
                         Dolorum iste repellat ullam sed delectus voluptatem laboriosam? Delectus, facere. Odit blanditiis cupiditate laudantium magnam sint ad ipsum corporis optio repellat aspernatur, quisquam doloribus itaque ullam reprehenderit maiores quibusdam accusamus.

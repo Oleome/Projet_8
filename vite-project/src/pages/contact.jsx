@@ -23,7 +23,7 @@ function Contact () {
     };
   
     return (
-      <div className="container">
+      <div className="container--contact">
         <form ref={form} onSubmit={sendEmail} className="form">
           <label>Name</label>
           <input type="text" name="name" />

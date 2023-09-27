@@ -96,3 +96,24 @@
 .card:hover .hover-image {
     opacity: 1; 
 }
+
+.kasa--accueil {
+    width: 50%;
+    height: 200px;
+    object-fit: contain;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.kasa--a_propos {
+    width: 50%;
+    height: 200px;
+}
+
+.kasa--details {
+    width: 50%;
+    height: 200px;
+}
